@@ -1,0 +1,24 @@
+[package]
+name = "quantum-simulation-qsvm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars = { version = "0.46", features = ["lazy", "csv"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+ndarray = "0.15"
+ndarray-rand = "0.14"
+num-complex = "0.4"
+rand = "0.8"
+
+# ML preprocessing
+linfa = "0.7"
+linfa-reduction = "0.7"
+linfa-svm = "0.7"
+
+# Quantum simulation
+qip = "1.5"
+
+# Parallel computation
+rayon = "1.10"      
